@@ -86,6 +86,27 @@ func benchLogiface[E logiface.Event](b *testing.B, config func(stream *blackhole
 			b.Fatalf("Log write count")
 		}
 	})
+
+	b.Run(`JSONPositiveInterface`, func(b *testing.B) {
+		stream := &blackholeStream{}
+		// the only difference from the JSONPositive test case is the .Logger bit
+		logger := newLogger(stream).Logger()
+		b.ResetTimer()
+
+		b.RunParallel(func(pb *testing.PB) {
+			for pb.Next() {
+				logger.Info().
+					Str("rate", "15").
+					Int("low", 16).
+					Float32("high", 123.2).
+					Log("The quick brown fox jumps over the lazy dog")
+			}
+		})
+
+		if stream.WriteCount() != uint64(b.N) {
+			b.Fatalf("Log write count")
+		}
+	})
 }
 
 func BenchmarkLogifaceZerologJSON(b *testing.B) {
