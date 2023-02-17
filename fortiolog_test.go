@@ -3,7 +3,7 @@ package bench
 import (
 	"testing"
 
-	log "fortio.org/fortio/log"
+	log "fortio.org/log"
 )
 
 func BenchmarkFortiologTextNegative(b *testing.B) {

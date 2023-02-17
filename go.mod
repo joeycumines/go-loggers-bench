@@ -9,12 +9,12 @@ replace (
 )
 
 require (
-	fortio.org/fortio v1.40.1
+	fortio.org/log v1.2.2
 	github.com/cihub/seelog v0.0.0-20170130134532-f561c5e57575
 	github.com/go-kit/kit v0.12.0
-	github.com/joeycumines/go-utilpkg/logiface v0.0.0-20230214142422-fa4ca4db0124
-	github.com/joeycumines/go-utilpkg/logiface/logrus v0.0.0-20230211053058-0f1429ef7ffc
-	github.com/joeycumines/go-utilpkg/logiface/zerolog v0.0.0-20230209142644-7492764539e0
+	github.com/joeycumines/go-utilpkg/logiface v0.0.0-20230214224346-d5f314202f12
+	github.com/joeycumines/go-utilpkg/logiface/logrus v0.0.0-20230214224346-d5f314202f12
+	github.com/joeycumines/go-utilpkg/logiface/zerolog v0.0.0-20230214224346-d5f314202f12
 	github.com/op/go-logging v0.0.0-20160315200505-970db520ece7
 	github.com/rs/zerolog v1.29.0
 	github.com/sirupsen/logrus v1.9.0
