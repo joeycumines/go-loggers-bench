@@ -1,9 +1,9 @@
 package bench
 
 import (
-	"github.com/joeycumines/go-utilpkg/logiface"
-	ilogrus "github.com/joeycumines/go-utilpkg/logiface/logrus"
-	izerolog "github.com/joeycumines/go-utilpkg/logiface/zerolog"
+	"github.com/joeycumines/ilogrus"
+	"github.com/joeycumines/izerolog"
+	"github.com/joeycumines/logiface"
 	"github.com/rs/zerolog"
 	"github.com/sirupsen/logrus"
 	"testing"
