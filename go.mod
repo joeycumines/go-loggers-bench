@@ -3,7 +3,7 @@ module github.com/imkira/go-loggers-bench
 go 1.19
 
 require (
-	fortio.org/log v1.2.2
+	fortio.org/log v1.3.0
 	github.com/cihub/seelog v0.0.0-20170130134532-f561c5e57575
 	github.com/go-kit/kit v0.12.0
 	github.com/joeycumines/ilogrus v0.0.0-20230604210720-2202d03b4720
@@ -24,5 +24,5 @@ require (
 	github.com/mattn/go-isatty v0.0.19 // indirect
 	golang.org/x/exp v0.0.0-20230522175609-2e198f4a06a1 // indirect
 	golang.org/x/sys v0.8.0 // indirect
-	golang.org/x/term v0.5.0 // indirect
+	golang.org/x/term v0.8.0 // indirect
 )
